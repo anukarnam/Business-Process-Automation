@@ -1,8 +1,5 @@
-# Business Process Automation Accelerator
-
-## Overview
-
-This accelerator provides a no code Studio for users to quickly build complex, multi-stage AI pipelines across multiple Azure AI and ML Services.  Users can select, and stack, AI/ML Services from across Azure Cognitive Services (OpenAI, Speech, Language, Form Recognizer, ReadAPI), Azure Machine Learning into a **single**, fully integrated **pipeline**. Integration between services is automated by BPA, and once deployed, a web app is created. This customizable UI&ast; provides and drag-n-drop interface for end users to build multi service pipelines. Finally, the user-created pipeline is triggered as soon as the first input file(s) are uploaded, storing the results in a Azure Blob Storage.
+# Business Process Automation
+This accelerator offers a no code Studio for the creation of complex, multi-stage AI pipelines across multiple Azure AI and ML Services. Users can select and stack Azure AI/ML Services across Azure Cognitive Services (OpenAI, Speech, Language, Form Recognizer, ReadAPI) and Azure Machine Learning to create a single integrated pipeline. The integration of services is automated with BPA. Once created, the solution is deployed, and a web app is created. The customized UI and ast; allows for the creation of multi-service pipelines using a drag and drop interface for end users. The created pipeline is executed as soon as the first input file is uploaded to Azure Blob Storage.
 
 ## Instructional Videos
 - [Deployment in Azure](https://bpasource.blob.core.windows.net/source/VideoSeries/Deploy.mp4?sv=2020-04-08&st=2023-03-10T15%3A54%3A39Z&se=2026-06-12T14%3A54%3A00Z&sr=b&sp=r&sig=chMcBfD%2Foc2E05Od8xNkbWprWxHIIc7ApDbVazk2%2BO8%3D)
@@ -11,8 +8,7 @@ This accelerator provides a no code Studio for users to quickly build complex, m
 - [OpenAI Enterprise Search Using Vector Search and Redis Enterprise](https://bpasource.blob.core.windows.net/source/VideoSeries/vectorSearch.mp4?sv=2021-10-04&st=2023-05-15T13%3A38%3A16Z&se=2024-10-18T13%3A38%3A00Z&sr=b&sp=r&sig=504UNV7DmTUvUrHAUiaiwggmzET3iM9buc2LOw0N%2F0U%3D)
 
 ## Deploy to Azure Instructions
-
-### Prerequisities
+Prerequisities
 1. Github account (Admin)
 2. Azure Resource Group (Owner)
 3. Ensure your subscription has **Microsoft.DocumentDB enabled**  
@@ -45,7 +41,7 @@ Once accepted, you can create subsequent resources using any deployment tool (SD
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fbusiness-process-automation%2Fmain%2Ftemplates%2Foneclickoairedis.json)
 
 ## Document Ingestion Architecture
-Once you've created a high-level Resource Group, you'll fork this repository and importing helper libraries, taking advantage of Github Actions to deploy the set of Azure Cognitive Services and manage all of the new Azure module credentials, in the background, within your newly created pipeline. After pipeline deployment, a static webapp will be created with your newly customizable POC UI for building and triggering pipelines.
+Once a high-level Resource Group has been created, a fork of this repository will be created, importing helper libraries, leveraging Github Actions to deploy the set of Azure Cognitive Services, as well as all of the new Azure module credentials, in the background, through the newly created pipeline. A static webapp will then be created after deployment of the pipeline, containing the newly customizable POC UI to create and trigger pipelines.
 
 ![](images/high-level-architecture-may-2023.png)  
 *Document Ingestion High-level Technical Architecture*  
@@ -60,4 +56,5 @@ Once you've created a high-level Resource Group, you'll fork this repository and
 
 3. Our third sample pipeline is inspired from the [popular Enterprise ChatGPT demo](https://github.com/Azure-Samples/azure-search-openai-demo), providing the backend and popular UI for creating a ChatGPT-like experience over your own data.  
 
-4. Pipeline #4: Popular approach for information retrieval with your own documents using a **vector store** and ChatGPT! Document chunking and vector store implementation is handled by the backend after you create your own pipeline.  
+4. Pipeline #4: Popular approach for information retrieval with your own documents using **vector store** and ChatGPT
+Document chunking and vector store implementation is performed by the backend after creating your own pipeline.
