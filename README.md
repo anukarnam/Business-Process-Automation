@@ -43,12 +43,8 @@ Once accepted, you can create subsequent resources using any deployment tool (SD
 ## Document Ingestion Architecture
 Once a high-level Resource Group has been created, a fork of this repository will be created, importing helper libraries, leveraging Github Actions to deploy the set of Azure Cognitive Services, as well as all of the new Azure module credentials, in the background, through the newly created pipeline. A static webapp will then be created after deployment of the pipeline, containing the newly customizable POC UI to create and trigger pipelines.
 
-![](images/high-level-architecture-may-2023.png)  
-*Document Ingestion High-level Technical Architecture*  
 
-![](images/sample-pipelines-may-2023.png)  
 *Several Sample Pipelines/Patterns Easily Created via the UI's drag-n-drop Interface*  
-  
   
 1. Pipeline #1: Two examples for creating a quick pipeline for ingesting **text** data, and then adding any of the Azure Language Services to process your text ([See all Azure Language Services Offerings here!](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/overview)), before visualizing in provided WebApp. The second pattern starts from ingestion of video data, and then adding any of our Video Analyzing Services to process your video! ([See all Azure Video Analyzer Services Offerings here!](https://azure.microsoft.com/en-us/products/video-indexer))
 
